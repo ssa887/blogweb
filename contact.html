@@ -41,7 +41,7 @@
       <!--contact section starts here  -->
       <section id="contact-section" class="section-center">
         <h2 class="section-heading text-white">Contact Me</h2>
-        <form>
+        <form action="POST" data-netlify="true">
           <div class="form-control">
             <label for="name">Name</label>
             <input type="text" id="name" autocomplete="name" required />
@@ -54,6 +54,15 @@
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
           </div>
+
+          <div class="form-control">
+            <input type="file" name="myfile" id="myfile" placeholder="Upload file" rows="7"/>
+          </div>
+
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+
           <div class="form-control form-btn-field">
             <button class="btn contact__btn">Submit</button>
           </div>
